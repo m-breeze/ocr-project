@@ -61,7 +61,6 @@ class GoogleCloudOCR {
         }
         let ocrResponse = try? JSONDecoder().decode(GoogleCloudOCRResponse.self, from: data)
         completion(ocrResponse?.responses[0])
-        print("Text on picture is \(ocrResponse!)")
     }
   }
   
